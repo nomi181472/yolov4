@@ -1100,7 +1100,9 @@ def output_to_target(output, width, height):
 
                 targets.append([i, cls, x, y, w, h, conf])
 
-    return np.array(targets)
+    newarray = torch.tensor(targets, device='cpu')
+
+    return np.array(newarray)
 
 
 def increment_dir(dir, comment=''):
