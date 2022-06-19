@@ -1,5 +1,5 @@
 train: /content/yolov4/dataset/images
-val: /content/yolov4/dataset/set6/images
+val: /content/yolov4/dataset/val/images
 
 nc:4
 names: ['Car', 'Truck', 'StopSign','traffic_lights']
